@@ -1,0 +1,27 @@
+{
+  "name": "television",
+  "version": "0.0.0",
+  "description": "A simple TDD JS application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brouviere/television.git"
+  },
+  "keywords": [
+    "TDD",
+    "JS",
+    "GIT"
+  ],
+  "author": "Ben ROUVIERE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brouviere/television/issues"
+  },
+  "homepage": "https://github.com/brouviere/television#readme",
+  "dependencies": {
+    "jest": "^26.4.2"
+  }
+}
