@@ -55,4 +55,37 @@ describe('Television Class Test', () => {
     expect(dumbTV.volume).toBe(0);
   });
 
+  it('should have a change channel method', () => {
+    expect(dumbTV.changeChannel).toBeDefined();
+  })
+
+  it('should change the channel value when changeChannel method is called', () => {
+    expect(dumbTV.channel).toBe(1);
+    
+    dumbTV.changeChannel(42);
+
+    expect(dumbTV.channel).toBe(42);
+  });
+
+  it('should not change the channel value when under 0', () => {
+    expect(dumbTV.channel).toBe(1);
+    
+    dumbTV.changeChannel(-1);
+    expect(dumbTV.channel).toBe(1);
+
+    dumbTV.changeChannel(42);
+    expect(dumbTV.channel).toBe(42);
+
+    dumbTV.changeChannel(182);
+    expect(dumbTV.channel).toBe(42);
+  });
+
+  it('should have a status function', () => {
+    expect(dumbTV.status).toBeDefined();
+  })
+
+  it('status function should return right information', () => {
+    expect(dumbTV.status()).toBe('SHARP sur la chaine 1 au volume 50%');
+  })
+
 });
